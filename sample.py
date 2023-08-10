@@ -12,21 +12,21 @@ from time import strftime
 from time import gmtime
 import sys, os, time
 from rdkit import Chem
-from add_side_new import scaffold_hop
+from add_side_chain import scaffold_hop
 from rdkit.Chem import AllChem
 from functools import partial
 import numpy as np
 # Argument parser
 parser = argparse.ArgumentParser(description='Neural message passing and rnn')
-parser.add_argument('--datasetPath', default='D:\Python\Project_VAE\data\LRRK2\\ref_LRRK2_new.smi', help='dataset path')
-parser.add_argument('--vocPath', default='D:\Python\Project_VAE\data\Voc_chembl_all_che', help='voc path')
-parser.add_argument('--modelPath', default='D:\Python\Project_VAE\models\model_no_node_lrrk2.ckpt', help='model path')
-parser.add_argument('--save_dir', default='D:\Python\Project_VAE\data\LRRK2\our\sample_our_newe_2.csv', help='save sample path')
+parser.add_argument('--datasetPath', default='./data/LRRK2/Ref_LRRK2.smi', help='dataset path')
+parser.add_argument('--vocPath', default='./data/Voc_chembl_all', help='voc path')
+parser.add_argument('--modelPath', default='./models/model_LRRK2_new.ckpt', help='model path')
+parser.add_argument('--save_dir', default='./data/LRRK2/our/sample_our_new.csv', help='save sample path')
+
 parser.add_argument('--batch-size', type=int, default=256, metavar='N',help='Input batch size for training ')
 parser.add_argument('--epochs', type=int, default=400, metavar='N',help='Number of epochs to sample')
-parser.add_argument('--molecule_num', type=int, default=5000, metavar='N',help='sample number')
+parser.add_argument('--molecule_num', type=int, default=500, metavar='N',help='sample number')
 parser.add_argument('--d_z', type=int, default=128, metavar='N',help='z  size')
-
 parser.add_argument('--d_hid', type=int, default=256, metavar='N',help='DMPN model hidden size')
 parser.add_argument('--hidden-size', type=int, default=200, metavar='N',help='NMPN , EMPN model hidden size')
 parser.add_argument('--depth', type=int, default=3, metavar='N',help='NMPN , EMPN model Hidden vector update times')
@@ -36,9 +36,7 @@ parser.add_argument('--r', type=int, default=3, metavar='N',help=' r different i
 args = parser.parse_args()
 print(args)
 
-
 from multiprocessing import Pool
-
 def mapper(n_jobs):
     """
     pool多进程并行计算
@@ -83,7 +81,6 @@ class Logger(object):
     def flush(self):
         pass
 
-
 def scaffold_hop_one(seqs, mol, sca,  voc):
     totalsmiles_one = []
     for i, seq in enumerate(seqs):
@@ -92,7 +89,6 @@ def scaffold_hop_one(seqs, mol, sca,  voc):
         if sca_mol is None:
             totalsmiles_one.append(smile)
         else:
-
             try:
                 new = scaffold_hop(mol[0], sca[0], smile)
                 totalsmiles_one.append(new)

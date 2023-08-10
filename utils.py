@@ -96,7 +96,7 @@ def fingerprints(smiles_mols_array, n_jobs=1, already_unique=True, **kwargs):
         return fps[inv_index]
     return fps
 
-_base_dir = "D:\Python\Project_VAE\Metrics"
+_base_dir = "D:\PythonProject\ScaffoldGVAE\Metrics"
 _mcf = pd.read_csv(os.path.join(_base_dir, 'mcf.csv'))
 _pains = pd.read_csv(os.path.join(_base_dir, 'wehi_pains.csv'),
                      names=['smarts', 'names'])

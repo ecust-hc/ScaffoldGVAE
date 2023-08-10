@@ -22,6 +22,7 @@ parser.add_argument('--save_dir', default='./models/model_PIM1.ckpt', help='save
 parser.add_argument('--voc_dir', default='./data/Voc_chembl_all', help='voc path')
 parser.add_argument('--loss_dir', default='./data/PIM1/batch_loss_PIM1.png', help='loss path')
 parser.add_argument('--pretrain', default='./models/model_pretrain.ckpt', help='voc path')
+# Hyperparameter of the model
 parser.add_argument('--batch-size', type=int, default=64, metavar='N',help='Input batch size for training ')
 parser.add_argument('--hidden-size', type=int, default=200, metavar='N',help='NMPN , EMPN model hidden size')
 parser.add_argument('--d_hid', type=int, default=256, metavar='N',help='DMPN model hidden size')
@@ -35,7 +36,6 @@ parser.add_argument('--lr_decrease_rate', type=float, default=0.03, metavar='LR'
 parser.add_argument('--learning_rate', type=float, default=1e-5, metavar='LR',help='Initial learning rate (default: 1e-4)')
 parser.add_argument('--kl_w_start', type=float, default=0, metavar='kl',help='kl weight')
 parser.add_argument('--kl_w_end', type=float, default=0.1, metavar='kl',help='kl weight')
-parser.add_argument('--beta', type=float, default=0.1,help='refers to a hyper-parameter of balancing two losses.')
 parser.add_argument('--early_stop', type=int, default=10, metavar='N', help='early_stop')
 args = parser.parse_args()
 print(args)
@@ -77,7 +77,6 @@ def main(args):
 
             mol_batch, sca_batch, collated_arr= batch
             seq = collated_arr.long()
-
 
             kl_loss, recon_loss = dmpn.forward(mol_batch, sca_batch, seq)
             loss =kl_weight*kl_loss + recon_loss

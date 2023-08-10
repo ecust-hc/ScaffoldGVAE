@@ -14,12 +14,14 @@ from time import gmtime
 import os.path
 import pandas as pd
 import math
+
 # Argument parser
 parser = argparse.ArgumentParser(description='Neural message passing and rnn')
 parser.add_argument('--datasetPath', default='./data/chembl31_pretrain.smi', help='dataset path')
 parser.add_argument('--save_dir', default='./model/model_pretrain.ckpt', help='save model path')
 parser.add_argument('--voc_dir', default='./data/Voc_chembl_all', help='voc path')
 parser.add_argument('--loss_dir', default='./data/batch_pretrain_loss.png', help='loss path')
+# Hyperparameter of the model
 parser.add_argument('--batch-size', type=int, default=256, metavar='N',help='Input batch size for training ')
 parser.add_argument('--hidden-size', type=int, default=200, metavar='N',help='NMPN , EMPN model hidden size')
 parser.add_argument('--d_hid', type=int, default=256, metavar='N',help='DMPN model hidden size')
@@ -34,7 +36,6 @@ parser.add_argument('--learning_rate', type=float, default=1e-4, metavar='LR',he
 parser.add_argument('--kl_w_start', type=float, default=0, metavar='kl',help='kl weight')
 parser.add_argument('--kl_w_end', type=float, default=0.1, metavar='kl',help='kl weight')
 parser.add_argument('--ver', type=bool, default=False,help='verification')
-parser.add_argument('--beta', type=float, default=0.1,help='refers to a hyper-parameter of balancing two losses.')
 parser.add_argument('--early_stop', type=int, default=10, metavar='N', help='early_stop')
 args = parser.parse_args()
 print(args)
