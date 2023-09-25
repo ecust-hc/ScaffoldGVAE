@@ -347,5 +347,7 @@ class DMPN(nn.Module):
             sequences = torch.cat(sequences, 1)
             return sequences.data
 
+
 if __name__ == "__main__":
     print("")
+

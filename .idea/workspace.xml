@@ -5,34 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a382f0d-4a0c-4424-9688-b4b0a63c4a1c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ScaffoldGVAE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ScaffoldGVAE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/NP_Score/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/NP_Score/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/NP_Score/npscorer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/NP_Score/publicnp.model.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/SA_Score/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/SA_Score/UnitTestSAScore.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/SA_Score/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/SA_Score/fpscores.pkl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/SA_Score/sascorer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/active_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/cal_metric.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/mcf.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metircs/wehi_pains.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/draw_mole.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/draw_mole.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fine_tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/fine_tuning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,23 +32,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/PythonProject/Project_VAE",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PythonProject/ScaffoldGVAE&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Python\ScaffoldGVAE\figure" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sample">
+  <component name="RunManager" selected="Python.test">
     <configuration name="Sca_extraction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ScaffoldGVAE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,8 +119,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ScaffoldGVAE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.sample" />
         <item itemvalue="Python.fine_tuning" />
         <item itemvalue="Python.Sca_extraction" />
@@ -146,7 +160,14 @@
       <updated>1690353167010</updated>
       <workItem from="1690353168868" duration="45000" />
       <workItem from="1690365037406" duration="1859000" />
-      <workItem from="1691653027963" duration="5792000" />
+      <workItem from="1691653027963" duration="6209000" />
+      <workItem from="1691976775481" duration="728000" />
+      <workItem from="1691982391839" duration="10448000" />
+      <workItem from="1692855508810" duration="7181000" />
+      <workItem from="1693186055043" duration="4689000" />
+      <workItem from="1693373595240" duration="2614000" />
+      <workItem from="1693988887334" duration="43000" />
+      <workItem from="1695608678902" duration="207000" />
     </task>
     <servers />
   </component>
@@ -156,6 +177,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ScaffoldGVAE$Sca_extraction.coverage" NAME="Sca_extraction Coverage Results" MODIFIED="1691655691339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ScaffoldGVAE$fine_tuning.coverage" NAME="fine_tuning Coverage Results" MODIFIED="1691657547915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ScaffoldGVAE$test.coverage" NAME="test Coverage Results" MODIFIED="1693278344254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ScaffoldGVAE$sample.coverage" NAME="sample Coverage Results" MODIFIED="1691658029728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
